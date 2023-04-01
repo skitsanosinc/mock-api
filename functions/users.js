@@ -1,22 +1,13 @@
 const requestResult = require('./requestResult');
 const chance = require('chance');
 
-const {
-    existsSync,
-    mkdirSync,
-    readFileSync,
-    writeFileSync
-} = require('fs');
-
-const {join} = require('path');
-
 const generateUser = function* (seed)
 {
     yield {
         key: chance(seed).guid(),
         name: chance(seed).name(),
         email: chance(seed).email({domain: 'mock.local'}),
-        uuiid: chance(seed).guid(),
+        uuid: chance(seed).guid(),
         avatar: chance(seed).avatar(),
         contact: {
             phone: chance(seed).phone(),
