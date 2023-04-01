@@ -1,7 +1,8 @@
 const headers = {
     'Content-Type': 'application/json',
     'Access-Control-Allow-Origin': '*',
-    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Allow-Headers': 'Content-Type, Authorization',
+    'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS'
 };
 
 const requestResult = (status, data) =>
@@ -12,7 +13,8 @@ const requestResult = (status, data) =>
         body: null
     };
 
-    switch (true) {
+    switch (true)
+    {
         case status === 200:
         case status === 201:
             result.body = JSON.stringify(data);
