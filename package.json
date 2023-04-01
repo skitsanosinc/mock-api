@@ -1,0 +1,14 @@
+{
+  "name": "mock-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:skitsanosinc/mock-api.git",
+  "author": "skitsanos <info@skitsanos.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "chance": "^1.1.11"
+  }
+}

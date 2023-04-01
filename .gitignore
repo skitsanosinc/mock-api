@@ -1,0 +1,4 @@
+.idea/
+*.lock
+# Local Netlify folder
+.netlify
